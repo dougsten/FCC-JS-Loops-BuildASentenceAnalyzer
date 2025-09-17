@@ -16,13 +16,39 @@ function getConsonantCount(sentence) {
     }
   }
   return consonantCount;
-}
+};
+
+function getPunctuationCount(sentence) {
+  let punctuationCount = 0;
+  const punctuationMarks = ".,!?;:'\"-()[]{}";
+  for(let char of sentence) {
+    if(punctuationMarks.includes(char)) {
+      punctuationCount += 1;
+    } 
+  }
+  return punctuationCount;
+};
+
+function getWordCount (sentence) {
+  if(sentence.trim() === "") {
+    let words = 0;
+    typeof words === 'number';
+    console.log(words);
+    return words;
+  }
+  let words = sentence.trim().split(/\s+/);
+  console.log(words);
+  return words.length;
+};
 
 const vowels = "aeiouAEIOU";
-const sentence = "Coding is fun";
+const sentence = "";
 getVowelCount(sentence);
 let vowelCount = getVowelCount(sentence);
 console.log(`Vowel Count: ${vowelCount}`);
 let consonantCount = getConsonantCount(sentence);
 console.log(`Consonant Count: ${consonantCount}`);
-
+let punctuationCount = getPunctuationCount(sentence);
+console.log(`Punctuation Count: ${punctuationCount}`);
+let wordCount = getWordCount(sentence);
+console.log(`Word Count: ${wordCount}`);
