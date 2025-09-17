@@ -41,14 +41,14 @@ function getWordCount (sentence) {
   return words.length;
 };
 
-const vowels = "aeiouAEIOU";
-const sentence = "";
-getVowelCount(sentence);
-let vowelCount = getVowelCount(sentence);
-console.log(`Vowel Count: ${vowelCount}`);
-let consonantCount = getConsonantCount(sentence);
-console.log(`Consonant Count: ${consonantCount}`);
-let punctuationCount = getPunctuationCount(sentence);
-console.log(`Punctuation Count: ${punctuationCount}`);
-let wordCount = getWordCount(sentence);
+// const vowels = "aeiouAEIOU";
+// const sentence = "I love freeCodeCamp";
+// getVowelCount(sentence);
+// let vowelCount = getVowelCount(sentence);
+// console.log(`Vowel Count: ${vowelCount}`);
+// let consonantCount = getConsonantCount(sentence);
+// console.log(`Consonant Count: ${consonantCount}`);
+// let punctuationCount = getPunctuationCount(sentence);
+// console.log(`Punctuation Count: ${punctuationCount}`);
+let wordCount = getWordCount("I love freeCodeCamp");
 console.log(`Word Count: ${wordCount}`);
